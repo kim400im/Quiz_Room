@@ -2,7 +2,6 @@ import pygame
 import sys
 import random
 from pygame.locals import *
-import threading
 
 mainImg = pygame.image.load("image/title_page.png")
 wallImg1 = pygame.image.load("image/wall2.jpg")
@@ -376,18 +375,6 @@ def set_message(msg):
     for i in range(9):
         message[i] = message[i + 1]
     message[9] = msg
-
-# def play_music():
-#     pygame.mixer.init()
-#     pygame.mixer.music.load("sound/title_bgm.wav")
-#     pygame.mixer.music.play()
-
-# def check_music_playing():
-#     while pygame.mixer.music.get_busy():
-#         pass
-#     play_music()
-
-
 
 def main(): 
     global v, index, timer, floor, fl_max, welcome
