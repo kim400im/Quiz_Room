@@ -2,6 +2,7 @@ import pygame
 import sys
 import random
 from pygame.locals import *
+import threading
 
 mainImg = pygame.image.load("image/title_page.png")
 wallImg1 = pygame.image.load("image/wall2.jpg")
@@ -237,7 +238,7 @@ def init_quiz4():
 def escape(): 
     global imgQuestion, question_lev, question_x, question_y
     typ = 3
-    imgQuestion = pygame.image.load("image/btlbg.png")
+    imgQuestion = pygame.image.load("image/escaped.png")
     question_lev = 1
     question_x = 440 - imgQuestion.get_width() / 2
     question_y = 560 - imgQuestion.get_height()
@@ -376,6 +377,17 @@ def set_message(msg):
         message[i] = message[i + 1]
     message[9] = msg
 
+# def play_music():
+#     pygame.mixer.init()
+#     pygame.mixer.music.load("sound/title_bgm.wav")
+#     pygame.mixer.music.play()
+
+# def check_music_playing():
+#     while pygame.mixer.music.get_busy():
+#         pass
+#     play_music()
+
+
 
 def main(): 
     global v, index, timer, floor, fl_max, welcome
@@ -390,7 +402,8 @@ def main():
     font = pygame.font.Font(None, 40)
     fontS = pygame.font.Font(None, 30)
 
-    while True:
+    running = True
+    while running:
         for event in pygame.event.get():
             if event.type == QUIT:
                 pygame.quit()
@@ -616,9 +629,11 @@ def main():
             elif timer == 100:
                 index = 0
                 timer = 0
+                running = False
 
         pygame.display.update()
         clock.tick(4 + 2 * v)
+    pygame.quit()
 
 if __name__ == '__main__':
     main()
