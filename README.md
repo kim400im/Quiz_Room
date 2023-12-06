@@ -1,6 +1,6 @@
-# Quiz_Room
+# :dart: Quiz_Room
 
-## introduction
+## :sparkles: introduction
 
 이 게임은 픽셀아트로 디자인한 퀴즈 게임입니다.
 
@@ -13,7 +13,7 @@
 - 퀴즈 4개를 모두 풀면 플레이어는 방에서 탈출합니다.
 - 만약 퀴즈를 틀리면 캐릭터는 사망하고 게임을 다시 플레이 해야 합니다.
 
-## Game Play
+## :joystick: Game Play
 ![image](https://github.com/kim400im/Quiz_Room/blob/main/markdown/title.png)
 
 - 게임 시작 화면입니다. 왼쪽에는 게임 제목인 Quiz Room, 오른쪽에는 게임 플레이 방법을 적었습니다.
@@ -47,14 +47,14 @@
 
 - 4문제를 모두 맞춘다면 위 화면처럼 탈출에 성공했다는 문구가 뜹니다. 이후 게임은 자동으로 종료합니다.
 
-:musical_score: ## Music
+## :musical_score: Music
 
 - 이 게임에 사용된 음악의 출처는 아래와 같습니다.
 - Song : DENFIX - Whisper
 - Follow Artist : https://bit.ly/3Gmi4yW
 - Music promoted by DayDreamSound : https://bit.ly/49XO1eC
 
-## Character Designs
+## :dolls: Character Designs
 
 - 게임에 사용되는 그림들은 픽셀 아트를 사용하여 제작했습니다. 
 
